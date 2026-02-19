@@ -192,7 +192,10 @@ const Landing = () => {
         draggable
         pauseOnHover
       />
-      <div className="h-16 w-full flex justify-start items-center bg-[#386AF6] p-4 rounded-b-md text-white text-2xl font-bold">CodeGenius</div>
+      <div className="h-16 w-full flex justify-start items-center gap-3 p-4 rounded-b-md">
+        <img src="/icons/logo.jpg" alt="CodeGenius" className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+        <p className="text-black text-2xl font-bold">CodeGenius</p>
+      </div>
       <div className="w-full px-3 py-3 max-w-full overflow-hidden">
         <div className="flex flex-row gap-2 w-full max-w-full justify-start items-center">
           <div className="w-[35%] max-w-[16rem]">
