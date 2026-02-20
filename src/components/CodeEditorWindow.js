@@ -17,10 +17,10 @@ const CodeEditorWindow = ({ onChange, language, code, theme }) => {
 
   return (
     <div className="w-full h-full overflow-hidden max-w-full">
-      <div className="rounded-md overflow-hidden w-full h-full">
+      <div className={`rounded-md overflow-hidden w-full h-full flex ${isMobile ? "justify-center" : "justify-start"}`}>
         <Editor
-          height={isMobile ? "90vh" : "85vh"}
-          width={isMobile ? "90vw" : "70vw"}
+          height={isMobile ? "100%" : "85vh"}
+          width={isMobile ? "100%" : "70vw"}
           language={language || "javascript"}
           value={value}
           theme={theme}
