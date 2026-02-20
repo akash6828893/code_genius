@@ -21,7 +21,7 @@ const OutputWindow = ({ outputDetails }) => {
   };
 
   const handleMouseMove = (e) => {
-    if (!isDragging.current) return;
+    if (!isDragging.current && isMobile) return;
     const clientY = e.clientY;
     const delta = clientY - startY.current;
     const maxHeight = window.innerHeight * 0.4;
@@ -31,7 +31,7 @@ const OutputWindow = ({ outputDetails }) => {
   };
 
   const handleTouchMove = (e) => {
-    if (!isDragging.current) return;
+    if (!isDragging.current && isMobile) return;
     const clientY = e.touches[0].clientY;
     const delta = clientY - startY.current;
     const maxHeight = window.innerHeight * 0.4;
